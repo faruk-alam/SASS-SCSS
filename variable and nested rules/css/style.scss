@@ -1,0 +1,59 @@
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// variable
+$header-bgcolor: #4CAF50; 
+$main-bgcolor: #fffd82;
+$footer-bgcolor: #00935e;
+$para-fontsize: 18px;
+header{
+    background: $header-bgcolor;
+    text-align: center;
+}
+    nav{
+        text-align: right;
+    }
+        ul{
+            list-style-type: none;
+            margin-right: 30px;
+            padding-bottom: 30px;
+        }
+
+            li{
+                display: inline-block;
+                text-align: right;
+                margin-right: 15px;
+            }
+                 a{
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-size: x-large;
+                    color: aliceblue;
+                    padding: 7px;
+                    border-radius: 9px;
+                    transition:  0.8s;
+                
+                }
+
+                a:hover {
+                    background-color: #4e4a4a;
+                    
+
+
+}
+#main-content{
+    background: $main-bgcolor;
+    padding: 20PX 30px;
+    font-size: $para-fontsize;
+
+}
+footer{
+    background: $footer-bgcolor;
+    padding: 10px 0;
+    text-align: center;
+    color: aliceblue;
+}
+
