@@ -1,0 +1,7 @@
+SASS Import and partial
+CSS provides @import option that makes you able to split your CSS into smaller, more maintainable portions. 
+The only one limitation is that each time you use @import in CSS, it creates another HTTP request.
+
+Sass builds on top of the current CSS @import. It doesn't need to require an HTTP request. Instead of this, 
+it simply takes the file that you want to import and combine it with the file you're importing into so you 
+can serve a single CSS file to the web browser.
