@@ -1,0 +1,26 @@
+Sass Mixins
+Sass Mixins facilitates you to make groups of CSS declarations that you want to reuse repeatedly on your site. 
+You can even pass the value according to your need to make the mixin more flexible.
+
+The mixin can store multiple values or parameters and call function to avoid writing repetitive codes. 
+Mixin names can use underscores and hyphens interchangeably.
+
+Sass: Including a mixin
+The @include directive is used to include the style defined by the mixin into the document. The name of the 
+mixin is taken and optional arguments are passed into it.
+Sass mixin arguments
+The mixin arguments are SassScript values that are passed when mixin is included and are available as variable.
+The argument is a name of a variable separated by a comma while defining a mixin. There are two types of mixin 
+arguments in Sass.
+
+Keyword Arguments
+Variable Arguments
+
+Keyword Arguments
+The keyword arguments are used to include in mixins. It specifies that the named arguments can be passed in 
+any order and the default value of arguments can be omitted.
+
+Variable Argument
+The variable arguments are used to pass any number of arguments to mixin. It is used when you would be dealing 
+with an unknown number of arguments. It contains keyword arguments passed to the function or mixin. The passed 
+keyword arguments can be accessed using keywords($args) function which return values mapped to String.
