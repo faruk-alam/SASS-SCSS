@@ -1,0 +1,7 @@
+>Sass Inheritance/ Extend:
+In Sass, @extend is used to share a set of CSS properties from one selector to another. It is a very important 
+and useful feature of Sass.
+
+The @extend feature of Sass allows classes to share a set of properties with one another. In complicated CSS 
+where many classes are put together, duplication of properties may occurs. The @extend features makes your 
+code less and facilitates you to rewrite it repeatedly.
