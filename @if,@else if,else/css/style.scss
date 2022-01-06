@@ -1,0 +1,112 @@
+@import "reset";
+@import "variable";
+@mixin article-style($margin,$bgcolor) {
+    margin: $margin;
+    background-color: $bgcolor;
+}
+article.art1{
+    @include article-style(10px 0, #353509 );
+}
+article.art2{
+    @include article-style(15px 0,#151818);
+}
+@mixin art-h4($align,$color,$padding) {
+   text-align: $align;
+   color: $color;
+   padding: $padding 
+}
+article.art1 h4{
+    @include art-h4(center,cyan,10px 0);
+}
+article.art2 h4{
+    @include art-h4(center,hotpink,20px 0);
+}
+@mixin para-style($padding,$color,$align) {
+    padding: $padding;
+    color: $color;
+    text-align: $align;
+}
+@mixin fontsize($value){
+    @if $value == small{
+        font-size: 12px;
+    }
+    @else if $value == medium{
+        font-size: 16px;
+    }
+    @else if $value == large{
+        font-size: 25px;
+    }
+    @else{
+        font-size: none;
+    }
+}
+article p{
+    @include para-style(10px 15px,#ffff ,justify );
+}
+header{
+    background: $header-bgcolor;
+    text-align: center;
+}
+    nav{
+        text-align: right;
+    }
+        ul{
+            list-style-type: none;
+            margin-right: 30px;
+            padding-bottom: 30px;
+        }
+
+            li{
+                display: inline-block;
+                text-align: right;
+                margin-right: 15px;
+            }
+                 a{
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: aliceblue;
+                    padding: 7px;
+                    border-radius: 9px;
+                    transition:  0.8s;
+                    @include fontsize(large);
+                
+                }
+
+                a:hover {
+                    background-color: #4e4a4a;
+                    
+
+
+}
+#main-content{
+    background: $main-bgcolor;
+    padding: 20PX 30px;
+    font-size: $para-fontsize;
+
+}
+.btn{
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white
+}
+.btn-download{
+    @extend .btn;
+    background-color: cyan;
+}
+.btn-learn-more{
+    @extend .btn;
+    background-color: hotpink;
+    margin-left: 50px;
+}
+.button{
+    text-align: center;
+}
+footer{
+    background: $footer-bgcolor;
+    padding: 10px 0;
+    text-align: center;
+    color: aliceblue;
+}
+

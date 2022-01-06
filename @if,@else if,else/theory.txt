@@ -1,0 +1,16 @@
+@if,@else if,else:
+
+The Sass built-in if() function is based on the condition. It returns only one result from two possible 
+outcomes. The result of the function depends on either the outcome is true or false.
+
+Sass @if Directive
+The @if directive specifies the execution of code statements according to the result of the expression. A @if 
+statement can be used with several @if else statements and one @else statement.
+
+There are two types of @if directive:
+
+@if directive
+@else if directive
+@if Directive
+The Sass @if directive accepts SassScript expressions and uses the nested styles if the expression returns 
+anything other than false or null.

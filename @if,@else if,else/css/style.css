@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article.art1 {
+  margin: 10px 0;
+  background-color: #353509;
+}
+
+article.art2 {
+  margin: 15px 0;
+  background-color: #151818;
+}
+
+article.art1 h4 {
+  text-align: center;
+  color: cyan;
+  padding: 10px 0;
+}
+
+article.art2 h4 {
+  text-align: center;
+  color: hotpink;
+  padding: 20px 0;
+}
+
+article p {
+  padding: 10px 15px;
+  color: #ffff;
+  text-align: justify;
+}
+
+header {
+  background: #4CAF50;
+  text-align: center;
+}
+
+nav {
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 30px;
+  padding-bottom: 30px;
+}
+
+li {
+  display: inline-block;
+  text-align: right;
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: aliceblue;
+  padding: 7px;
+  border-radius: 9px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  font-size: 25px;
+}
+
+a:hover {
+  background-color: #4e4a4a;
+}
+
+#main-content {
+  background: #fffd82;
+  padding: 20PX 30px;
+  font-size: 18px;
+}
+
+.btn, .btn-download, .btn-learn-more {
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+.btn-download {
+  background-color: cyan;
+}
+
+.btn-learn-more {
+  background-color: hotpink;
+  margin-left: 50px;
+}
+
+.button {
+  text-align: center;
+}
+
+footer {
+  background: #00935e;
+  padding: 10px 0;
+  text-align: center;
+  color: aliceblue;
+}
+/*# sourceMappingURL=style.css.map */
